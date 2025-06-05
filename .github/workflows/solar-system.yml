@@ -74,7 +74,7 @@ jobs:
     docker:
         runs-on: ubuntu-lates
         name: Containerization
-        needs: [unit-testing, code-coverage]t
+        needs: [unit-testing, code-coverage]
         steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
