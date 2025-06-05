@@ -72,9 +72,9 @@ jobs:
             retention-days: 5
             
     docker:
+        runs-on: ubuntu-lates
         name: Containerization
-        needs: [unit-testing, code-coverage]
-        runs-on: ubuntu-latest
+        needs: [unit-testing, code-coverage]t
         steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
